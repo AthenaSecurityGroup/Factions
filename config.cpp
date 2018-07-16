@@ -200,3 +200,41 @@ class CfgFactionClasses {
         priority = 4;
     };
 };
+
+class CfgGroups {
+    class Indep {
+        class Greek_F {
+            name = "Mediterranean";
+            class Infantry {
+                name = "Infantry";
+                class FireTeam {
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    name = "Fire team";
+                    //faction = "Greek_F";
+                    //side = 2;
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        //side = 2;
+                        vehicle = "Greek_Soldier_TL_F";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        vehicle = "Greek_Soldier_AR_F";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        vehicle = "Greek_Soldier_F";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        vehicle = "Greek_Soldier_F";
+                    };
+                };
+            };
+        };
+    };
+};
