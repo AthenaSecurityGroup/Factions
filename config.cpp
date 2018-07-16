@@ -11,10 +11,10 @@ class CfgPatches {
             "Greek_Soldier_M_F",
             "Greek_Soldier_SL_F",
             "Greek_Soldier_TL_F"
-    };
+        };
         weapons[] = {
             "Greek_AR_ACO_F"
-};
+        };
         requiredAddons[] = {
             "A3_Characters_F_INDEP",
             "A3_Weapons_F_Exp_Machineguns_LMG_03"
@@ -179,7 +179,7 @@ class CfgVehicles {
             "1Rnd_Smoke_Grenade_shell",
             "1Rnd_Smoke_Grenade_shell",
             "1Rnd_Smoke_Grenade_shell"
-};
+        };
         respawnMagazines[] += {
             "1Rnd_HE_Grenade_shell",
             "1Rnd_HE_Grenade_shell",
@@ -278,6 +278,25 @@ class CfgGroups {
                         vehicle = "Greek_Soldier_F";
                     };
                 };
+            };
+        };
+    };
+};
+
+class cfgFormations {
+    class Guer {
+        class SquadWedge {
+            class Fixed {
+                FormationPositionInfo1[] = {-1, 0, 0, 0};
+                FormationPositionInfo2[] = {0, 1, -1, 0.785398};
+                FormationPositionInfo3[] = {1, -1, -1, -0.785398};
+                FormationPositionInfo4[] = {2, 2, -2, 0.785398};
+            };
+            class Pattern {
+                FormationPositionInfo1[] = {-4, 7, -1, 0};
+                FormationPositionInfo2[] = {-4, 6, -2, -0.785398};
+                FormationPositionInfo3[] = {-4, 6, 0, 0.785398};
+                FormationPositionInfo4[] = {-4, 5, 1, 0.785398};
             };
         };
     };
