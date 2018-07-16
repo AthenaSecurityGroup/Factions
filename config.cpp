@@ -25,38 +25,39 @@ class CfgPatches {
     "SmokeShell"
 
 #define greek_items \
-    "V_PlateCarrierIAGL_dgtl", \
+    "V_PlateCarrierIA1_dgtl", \
     "H_HelmetIA", \
     "ItemMap", \
     "ItemCompass", \
     "ItemWatch", \
-    "ItemRadio", \
-    "NVGoggles_INDEP"
+    "ItemRadio"
 
 class CfgVehicles {
     class I_Soldier_base_F;
     class Greek_Soldier_base_F : I_Soldier_base_F {
         author = "Athena Security Group";
-        displayName = "Greek Soldier";
-        identityTypes[] = {};
+        displayName = "Soldier";
+        //identityTypes[] = {"LanguageGRE_F", "Head_Greek", "G_HAF_default"};
         weapons[] = {"arifle_Mk20C_ACO_F", "Throw", "Put"};
         respawnWeapons[] = {"arifle_Mk20C_ACO_F", "Throw", "Put"};
         magazines[] = {greek_mags};
         respawnMagazines[] = {greek_mags};
+        linkedItems[] = {greek_items};
+        respawnLinkedItems[] = {greek_items};
     };
 
     class Greek_Soldier_F : Greek_Soldier_base_F {
         cost = 100000;
-        displayName = "Greek Rifleman";
+        displayName = "Rifleman";
         scope = 2;
     };
 
     class Greek_Soldier_TL_F : Greek_Soldier_base_F {
         cost = 450000;
-        displayName = "Greek Team Leader";
+        displayName = "Team Leader";
         icon = "iconManLeader";
         scope = 2;
-        magazines[] = {greek_mags, "HandGrenade", "HandGrenade"};
-        respawnMagazines[] = {greek_mags, "HandGrenade", "HandGrenade"};
+        magazines[] += {"HandGrenade", "HandGrenade"};
+        respawnMagazines[] += {"HandGrenade", "HandGrenade"};
     };
 };
