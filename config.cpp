@@ -37,6 +37,7 @@ class CfgVehicles {
     class Greek_Soldier_base_F : I_Soldier_base_F {
         author = "Athena Security Group";
         displayName = "Soldier";
+        faction = "Greek_F";
         //identityTypes[] = {"LanguageGRE_F", "Head_Greek", "G_HAF_default"};
         weapons[] = {"arifle_Mk20C_ACO_F", "Throw", "Put"};
         respawnWeapons[] = {"arifle_Mk20C_ACO_F", "Throw", "Put"};
@@ -59,5 +60,13 @@ class CfgVehicles {
         scope = 2;
         magazines[] += {"HandGrenade", "HandGrenade"};
         respawnMagazines[] += {"HandGrenade", "HandGrenade"};
+    };
+};
+
+class CfgFactionClasses {
+    class IND_F;
+    class Greek_F : IND_F {
+        displayName = "Mediterranean";
+        priority = 4;
     };
 };
