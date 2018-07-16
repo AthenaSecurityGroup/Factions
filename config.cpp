@@ -234,6 +234,50 @@ class CfgGroups {
                         vehicle = "Greek_Soldier_F";
                     };
                 };
+                class Squad {
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    name = "Rifle squad";
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        vehicle = "Greek_Soldier_SL_F";
+                    };
+                    class Unit1 {
+                        position[] = {-5,5,0};
+                        rank = "PRIVATE";
+                        vehicle = "Greek_Soldier_F";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        vehicle = "Greek_Soldier_AR_F";
+                    };
+                    class Unit3 {
+                        position[] = {-10,10,0};
+                        rank = "PRIVATE";
+                        vehicle = "Greek_Soldier_M_F";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "SERGEANT";
+                        vehicle = "Greek_Soldier_TL_F";
+                    };
+                    class Unit5 {
+                        position[] = {-15,15,0};
+                        rank = "CORPORAL";
+                        vehicle = "Greek_Soldier_AR_F";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        vehicle = "Greek_Soldier_F";
+                    };
+                    class Unit7 {
+                        position[] = {-20,20,0};
+                        rank = "PRIVATE";
+                        vehicle = "Greek_Soldier_F";
+                    };
+                };
             };
         };
     };
